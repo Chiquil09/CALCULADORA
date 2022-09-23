@@ -162,7 +162,7 @@ public class Login extends javax.swing.JFrame {
             getToolkit().beep();
             evt.consume();
             
-            JOptionPane.showMessageDialog(rootPane,"Ingresar solo letras");}
+            JOptionPane.showMessageDialog(rootPane,"Ingresar solo letras","ERROR",JOptionPane.ERROR_MESSAGE);}
     }//GEN-LAST:event_txt_UsuarioKeyTyped
 
     private void VERMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VERMouseClicked
@@ -207,7 +207,7 @@ public class Login extends javax.swing.JFrame {
         if(Character.isLetter(validar)) {
             getToolkit().beep();
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "Ingrese solo numeros");
+            JOptionPane.showMessageDialog(rootPane, "Ingrese solo numeros","ERROR",JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_txt_passwordKeyTyped
    public static boolean validarNumeros(String datos)   {
