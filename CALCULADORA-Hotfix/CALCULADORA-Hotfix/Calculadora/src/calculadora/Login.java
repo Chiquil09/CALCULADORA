@@ -1,15 +1,22 @@
 package calculadora;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class Login extends javax.swing.JFrame {
-
     public Login() {
         initComponents();
         this.setLocationRelativeTo(this);
         this.OCULTAR.setVisible(false);
     }
 
+    private void transparencia(){
+        jButton1.setOpaque(true);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -19,31 +26,41 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         txt_Usuario = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         txt_password = new javax.swing.JPasswordField();
         OCULTAR = new javax.swing.JLabel();
         VER = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("USUARIO");
-
+        txt_Usuario.setBackground(new java.awt.Color(36, 42, 56));
+        txt_Usuario.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
+        txt_Usuario.setForeground(new java.awt.Color(254, 254, 254));
+        txt_Usuario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(36, 42, 56)));
+        txt_Usuario.setOpaque(true);
+        txt_Usuario.setSelectionColor(new java.awt.Color(36, 42, 56));
         txt_Usuario.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txt_UsuarioKeyTyped(evt);
             }
         });
+        getContentPane().add(txt_Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 490, 34));
 
-        jLabel2.setText("CONTRASEÑA");
-
+        txt_password.setBackground(new java.awt.Color(36, 42, 56));
+        txt_password.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
+        txt_password.setForeground(new java.awt.Color(254, 254, 254));
+        txt_password.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(36, 42, 56)));
+        txt_password.setOpaque(true);
         txt_password.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txt_passwordKeyTyped(evt);
             }
         });
+        getContentPane().add(txt_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 430, 34));
 
         OCULTAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/oculto.png"))); // NOI18N
         OCULTAR.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -51,6 +68,7 @@ public class Login extends javax.swing.JFrame {
                 OCULTARMouseClicked(evt);
             }
         });
+        getContentPane().add(OCULTAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, -1, -1));
 
         VER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/ver.png"))); // NOI18N
         VER.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -58,8 +76,13 @@ public class Login extends javax.swing.JFrame {
                 VERMouseClicked(evt);
             }
         });
+        getContentPane().add(VER, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, -1, -1));
 
-        jButton1.setText("INGRESAR");
+        jButton1.setFont(new java.awt.Font("Agency FB", 1, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/ingresar.png"))); // NOI18N
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -70,51 +93,15 @@ public class Login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, 150, 70));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(149, 149, 149)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(5, 5, 5)
-                        .addComponent(txt_Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(5, 5, 5)
-                        .addComponent(txt_password, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(VER)
-                            .addComponent(OCULTAR))))
-                .addGap(178, 178, 178))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton1)
-                .addGap(322, 322, 322))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(106, 106, 106)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txt_Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(90, 90, 90)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(txt_password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(VER)
-                    .addComponent(OCULTAR))
-                .addGap(65, 65, 65)
-                .addComponent(jButton1)
-                .addContainerGap(181, Short.MAX_VALUE))
-        );
+        jLabel3.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Sistema de acceso");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/rect2009_1.jpg"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -148,7 +135,24 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+ String Usuario = "profeNoe";
+        String Contraseña = "12345";
+        String pass = new String (txt_password.getPassword());
+        if(txt_Usuario.getText().equals(Usuario) && pass.equals(Contraseña)){
+            Login s1 = new Login();
+            s1.setVisible(true);
+            dispose();
 
+        }else{
+            if(txt_Usuario.getText().equals(Usuario)){
+                JOptionPane.showMessageDialog(this, " contraseña incorrecta " , " ERROR ", JOptionPane.ERROR_MESSAGE);
+            }else{
+                if(txt_password.getText().equals(Contraseña)){
+                    JOptionPane.showMessageDialog(this, " usuario incorrecto " , " ERROR ", JOptionPane.ERROR_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, " usuario y contraseña incorrectos" , " ERROR ", JOptionPane.ERROR_MESSAGE);
+                    {
+                    }}}}
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void txt_passwordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_passwordKeyTyped
@@ -201,9 +205,10 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel OCULTAR;
     private javax.swing.JLabel VER;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField txt_Usuario;
     private javax.swing.JPasswordField txt_password;
     // End of variables declaration//GEN-END:variables
-}
+
+    }
