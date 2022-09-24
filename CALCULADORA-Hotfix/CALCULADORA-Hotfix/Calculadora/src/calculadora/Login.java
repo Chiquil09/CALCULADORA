@@ -8,9 +8,11 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Login extends javax.swing.JFrame {
+    FondoPanel fondo = new FondoPanel();
     public Login() {
+       this.setContentPane(fondo);
         initComponents();
-        this.setLocationRelativeTo(this);
+        this.setExtendedState(this.MAXIMIZED_BOTH);
         this.OCULTAR.setVisible(false);
     }
 
@@ -25,6 +27,7 @@ public class Login extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         txt_Usuario = new javax.swing.JTextField();
         txt_password = new javax.swing.JPasswordField();
@@ -33,50 +36,76 @@ public class Login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(new java.awt.GridBagLayout());
 
         txt_Usuario.setBackground(new java.awt.Color(36, 42, 56));
         txt_Usuario.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
         txt_Usuario.setForeground(new java.awt.Color(254, 254, 254));
         txt_Usuario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(36, 42, 56)));
-        txt_Usuario.setOpaque(true);
         txt_Usuario.setSelectionColor(new java.awt.Color(36, 42, 56));
         txt_Usuario.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txt_UsuarioKeyTyped(evt);
             }
         });
-        getContentPane().add(txt_Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 490, 34));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.ipadx = 627;
+        gridBagConstraints.ipady = 26;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(9, 70, 0, 75);
+        getContentPane().add(txt_Usuario, gridBagConstraints);
 
         txt_password.setBackground(new java.awt.Color(36, 42, 56));
         txt_password.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
         txt_password.setForeground(new java.awt.Color(254, 254, 254));
         txt_password.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(36, 42, 56)));
-        txt_password.setOpaque(true);
         txt_password.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txt_passwordKeyTyped(evt);
             }
         });
-        getContentPane().add(txt_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 430, 34));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 557;
+        gridBagConstraints.ipady = 26;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(9, 70, 0, 0);
+        getContentPane().add(txt_password, gridBagConstraints);
 
-        OCULTAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/oculto.png"))); // NOI18N
+        OCULTAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/oculto_2.png"))); // NOI18N
         OCULTAR.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 OCULTARMouseClicked(evt);
             }
         });
-        getContentPane().add(OCULTAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(19, 40, 0, 75);
+        getContentPane().add(OCULTAR, gridBagConstraints);
 
-        VER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/ver.png"))); // NOI18N
+        VER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/ver_1.png"))); // NOI18N
         VER.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 VERMouseClicked(evt);
             }
         });
-        getContentPane().add(VER, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(19, 40, 0, 75);
+        getContentPane().add(VER, gridBagConstraints);
 
         jButton1.setFont(new java.awt.Font("Agency FB", 1, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -93,15 +122,46 @@ public class Login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, 150, 70));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.ipadx = -45;
+        gridBagConstraints.ipady = -15;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(80, 123, 64, 0);
+        getContentPane().add(jButton1, gridBagConstraints);
 
-        jLabel3.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Agency FB", 1, 34)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Sistema de acceso");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, -1, -1));
+        jLabel3.setText("Contraseña");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(50, 70, 0, 0);
+        getContentPane().add(jLabel3, gridBagConstraints);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/rect2009_1.jpg"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 540));
+        jLabel4.setFont(new java.awt.Font("Agency FB", 1, 40)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Sistema de acceso");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(30, 63, 0, 0);
+        getContentPane().add(jLabel4, gridBagConstraints);
+
+        jLabel5.setFont(new java.awt.Font("Agency FB", 1, 34)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Usuario:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(52, 70, 0, 0);
+        getContentPane().add(jLabel5, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -115,7 +175,7 @@ public class Login extends javax.swing.JFrame {
             getToolkit().beep();
             evt.consume();
             
-            JOptionPane.showMessageDialog(rootPane,"Ingresar solo letras");}
+            JOptionPane.showMessageDialog(rootPane,"Ingresar solo letras","ERROR",JOptionPane.ERROR_MESSAGE);}
     }//GEN-LAST:event_txt_UsuarioKeyTyped
 
     private void VERMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VERMouseClicked
@@ -132,6 +192,9 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+         this.dispose();
+        calculadoraBasica ver = new calculadoraBasica();
+        ver.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
@@ -160,7 +223,7 @@ public class Login extends javax.swing.JFrame {
         if(Character.isLetter(validar)) {
             getToolkit().beep();
             evt.consume();
-            JOptionPane.showMessageDialog(rootPane, "Ingrese solo numeros");
+            JOptionPane.showMessageDialog(rootPane, "Ingrese solo numeros","ERROR",JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_txt_passwordKeyTyped
    public static boolean validarNumeros(String datos)   {
@@ -207,8 +270,18 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField txt_Usuario;
     private javax.swing.JPasswordField txt_password;
     // End of variables declaration//GEN-END:variables
-
+class FondoPanel extends JPanel{
+       private Image imagen; 
+       @Override
+       public void paint (Graphics g){
+           imagen= new ImageIcon(getClass().getResource("/fondo/fondo6.jpg")).getImage();
+           g.drawImage(imagen,0,0,getWidth(),getHeight(),this);
+           setOpaque(false);
+          super.paint(g);
+       }
+    }
     }
