@@ -26,6 +26,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton15 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         txtpantalla = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
@@ -41,19 +42,20 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         jButton15.setText("jButton15");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        txtpantalla.setBackground(new java.awt.Color(13, 13, 13));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/modo2.png"))); // NOI18N
+
+        txtpantalla.setBackground(new java.awt.Color(51, 51, 51));
         txtpantalla.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
         txtpantalla.setForeground(new java.awt.Color(254, 254, 254));
         txtpantalla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(13, 13, 13)));
@@ -68,10 +70,11 @@ public class calculadoraBasica extends javax.swing.JFrame {
             }
         });
 
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new java.awt.GridLayout(4, 5));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/7.png"))); // NOI18N
-        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
         jButton3.setContentAreaFilled(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -82,7 +85,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton3);
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/8.png"))); // NOI18N
-        jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton7.setBorder(null);
         jButton7.setBorderPainted(false);
         jButton7.setContentAreaFilled(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +96,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton7);
 
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/9.png"))); // NOI18N
-        jButton11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton11.setBorder(null);
         jButton11.setBorderPainted(false);
         jButton11.setContentAreaFilled(false);
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +107,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton11);
 
         jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/suma.png"))); // NOI18N
-        jButton16.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton16.setBorder(null);
         jButton16.setBorderPainted(false);
         jButton16.setContentAreaFilled(false);
         jButton16.addActionListener(new java.awt.event.ActionListener() {
@@ -115,7 +118,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton16);
 
         jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/borrar.png"))); // NOI18N
-        jButton18.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton18.setBorder(null);
         jButton18.setBorderPainted(false);
         jButton18.setContentAreaFilled(false);
         jButton18.addActionListener(new java.awt.event.ActionListener() {
@@ -126,7 +129,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton18);
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/4.png"))); // NOI18N
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +140,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton2);
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/5.png"))); // NOI18N
-        jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton8.setBorder(null);
         jButton8.setBorderPainted(false);
         jButton8.setContentAreaFilled(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +151,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton8);
 
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/6.png"))); // NOI18N
-        jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton12.setBorder(null);
         jButton12.setBorderPainted(false);
         jButton12.setContentAreaFilled(false);
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -159,7 +162,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton12);
 
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/resta.png"))); // NOI18N
-        jButton13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton13.setBorder(null);
         jButton13.setBorderPainted(false);
         jButton13.setContentAreaFilled(false);
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -170,7 +173,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton13);
 
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/multiplicacion.png"))); // NOI18N
-        jButton17.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton17.setBorder(null);
         jButton17.setBorderPainted(false);
         jButton17.setContentAreaFilled(false);
         jButton17.addActionListener(new java.awt.event.ActionListener() {
@@ -181,7 +184,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton17);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/1.png"))); // NOI18N
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -192,7 +195,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton1);
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/2.png"))); // NOI18N
-        jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -203,7 +206,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton5);
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/3.png"))); // NOI18N
-        jButton9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton9.setBorder(null);
         jButton9.setBorderPainted(false);
         jButton9.setContentAreaFilled(false);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -213,11 +216,8 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton9);
 
-        jButton6.setText("jButton6");
-        jPanel1.add(jButton6);
-
         jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/division.png"))); // NOI18N
-        jButton14.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton14.setBorder(null);
         jButton14.setBorderPainted(false);
         jButton14.setContentAreaFilled(false);
         jButton14.addActionListener(new java.awt.event.ActionListener() {
@@ -228,7 +228,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton14);
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/punto.png"))); // NOI18N
-        jButton10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton10.setBorder(null);
         jButton10.setBorderPainted(false);
         jButton10.setContentAreaFilled(false);
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -239,7 +239,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jPanel1.add(jButton10);
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/0.png"))); // NOI18N
-        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
         jButton4.setContentAreaFilled(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -249,14 +249,8 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton4);
 
-        jButton20.setText("jButton20");
-        jPanel1.add(jButton20);
-
-        jButton21.setText("jButton21");
-        jPanel1.add(jButton21);
-
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/igual.png"))); // NOI18N
-        jButton19.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton19.setBorder(null);
         jButton19.setBorderPainted(false);
         jButton19.setContentAreaFilled(false);
         jButton19.addActionListener(new java.awt.event.ActionListener() {
@@ -266,21 +260,43 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton19);
 
+        jLabel2.setText("jLabel2");
+
+        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("jLabel3");
+        jLabel3.setOpaque(true);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 866, Short.MAX_VALUE)
-            .addComponent(txtpantalla)
+            .addComponent(txtpantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1010, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1010, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(860, 860, 860)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(txtpantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(4, 4, 4)
+                .addComponent(txtpantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(115, 115, 115)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
         pack();
@@ -514,15 +530,15 @@ public class calculadoraBasica extends javax.swing.JFrame {
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtpantalla;
     // End of variables declaration//GEN-END:variables
