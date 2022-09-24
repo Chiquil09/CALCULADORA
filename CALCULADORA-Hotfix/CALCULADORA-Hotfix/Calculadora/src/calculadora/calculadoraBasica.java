@@ -26,190 +26,37 @@ public class calculadoraBasica extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton15 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
         txtpantalla = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jButton17 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        jButton21 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
 
         jButton15.setText("jButton15");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/4.png"))); // NOI18N
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, 95));
-
-        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/division.png"))); // NOI18N
-        jButton14.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton14.setBorderPainted(false);
-        jButton14.setContentAreaFilled(false);
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 380, 95, 95));
-
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/7.png"))); // NOI18N
-        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, -1, 95));
-
-        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/multiplicacion.png"))); // NOI18N
-        jButton17.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton17.setBorderPainted(false);
-        jButton17.setContentAreaFilled(false);
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 470, 95, 96));
-
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/0.png"))); // NOI18N
-        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton4.setBorderPainted(false);
-        jButton4.setContentAreaFilled(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, -1, 96));
-
-        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/suma.png"))); // NOI18N
-        jButton16.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton16.setBorderPainted(false);
-        jButton16.setContentAreaFilled(false);
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 290, 95, 95));
-
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/2.png"))); // NOI18N
-        jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton5.setBorderPainted(false);
-        jButton5.setContentAreaFilled(false);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 95, 95));
-
-        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/borrar.png"))); // NOI18N
-        jButton18.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton18.setBorderPainted(false);
-        jButton18.setContentAreaFilled(false);
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 200, 95, 95));
-
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/8.png"))); // NOI18N
-        jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton7.setBorderPainted(false);
-        jButton7.setContentAreaFilled(false);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, 95, 95));
-
-        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/igual.png"))); // NOI18N
-        jButton19.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton19.setBorderPainted(false);
-        jButton19.setContentAreaFilled(false);
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 300, 95, -1));
-
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/5.png"))); // NOI18N
-        jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton8.setBorderPainted(false);
-        jButton8.setContentAreaFilled(false);
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 95, 95));
-
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/3.png"))); // NOI18N
-        jButton9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton9.setBorderPainted(false);
-        jButton9.setContentAreaFilled(false);
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 95, 95));
-
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/punto.png"))); // NOI18N
-        jButton10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton10.setBorderPainted(false);
-        jButton10.setContentAreaFilled(false);
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 470, 95, 96));
-
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/9.png"))); // NOI18N
-        jButton11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton11.setBorderPainted(false);
-        jButton11.setContentAreaFilled(false);
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 380, 95, 95));
 
         txtpantalla.setBackground(new java.awt.Color(13, 13, 13));
         txtpantalla.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
         txtpantalla.setForeground(new java.awt.Color(254, 254, 254));
         txtpantalla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(13, 13, 13)));
-        txtpantalla.setOpaque(true);
         txtpantalla.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtpantallaActionPerformed(evt);
@@ -220,7 +67,85 @@ public class calculadoraBasica extends javax.swing.JFrame {
                 txtpantallaKeyTyped(evt);
             }
         });
-        getContentPane().add(txtpantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 24, 490, 130));
+
+        jPanel1.setLayout(new java.awt.GridLayout(4, 5));
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/7.png"))); // NOI18N
+        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.setBorderPainted(false);
+        jButton3.setContentAreaFilled(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3);
+
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/8.png"))); // NOI18N
+        jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton7.setBorderPainted(false);
+        jButton7.setContentAreaFilled(false);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton7);
+
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/9.png"))); // NOI18N
+        jButton11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton11.setBorderPainted(false);
+        jButton11.setContentAreaFilled(false);
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton11);
+
+        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/suma.png"))); // NOI18N
+        jButton16.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton16.setBorderPainted(false);
+        jButton16.setContentAreaFilled(false);
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton16);
+
+        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/borrar.png"))); // NOI18N
+        jButton18.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton18.setBorderPainted(false);
+        jButton18.setContentAreaFilled(false);
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton18);
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/4.png"))); // NOI18N
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2);
+
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/5.png"))); // NOI18N
+        jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton8.setBorderPainted(false);
+        jButton8.setContentAreaFilled(false);
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton8);
 
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/6.png"))); // NOI18N
         jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -231,18 +156,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
                 jButton12ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 95, 95));
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/1.png"))); // NOI18N
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, 95));
+        jPanel1.add(jButton12);
 
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/resta.png"))); // NOI18N
         jButton13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -253,92 +167,128 @@ public class calculadoraBasica extends javax.swing.JFrame {
                 jButton13ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 95, 95));
+        jPanel1.add(jButton13);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/rect2009.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 590));
+        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/multiplicacion.png"))); // NOI18N
+        jButton17.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton17.setBorderPainted(false);
+        jButton17.setContentAreaFilled(false);
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton17);
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/1.png"))); // NOI18N
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/2.png"))); // NOI18N
+        jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton5.setBorderPainted(false);
+        jButton5.setContentAreaFilled(false);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5);
+
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/3.png"))); // NOI18N
+        jButton9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton9.setBorderPainted(false);
+        jButton9.setContentAreaFilled(false);
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton9);
+
+        jButton6.setText("jButton6");
+        jPanel1.add(jButton6);
+
+        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/division.png"))); // NOI18N
+        jButton14.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton14.setBorderPainted(false);
+        jButton14.setContentAreaFilled(false);
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton14);
+
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/punto.png"))); // NOI18N
+        jButton10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton10.setBorderPainted(false);
+        jButton10.setContentAreaFilled(false);
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton10);
+
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/0.png"))); // NOI18N
+        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton4.setBorderPainted(false);
+        jButton4.setContentAreaFilled(false);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4);
+
+        jButton20.setText("jButton20");
+        jPanel1.add(jButton20);
+
+        jButton21.setText("jButton21");
+        jPanel1.add(jButton21);
+
+        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/igual.png"))); // NOI18N
+        jButton19.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton19.setBorderPainted(false);
+        jButton19.setContentAreaFilled(false);
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton19);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 866, Short.MAX_VALUE)
+            .addComponent(txtpantalla)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(txtpantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void transparencia(){
         jButton1.setOpaque(true);
-    }
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"4");
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        // TODO add your handling code here:
-        if (!txtpantalla.getText().equals("")) {
-            memoria1=txtpantalla.getText();
-            signo="/";
-            txtpantalla.setText("");
-        }
-    }//GEN-LAST:event_jButton14ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"7");
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-        if (!txtpantalla.getText().equals("")) {
-            memoria1=txtpantalla.getText();
-            signo="*";
-            txtpantalla.setText("");
-        }
-    }//GEN-LAST:event_jButton17ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"0");
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here
-        if (!txtpantalla.getText().equals("")) {
-            memoria1=txtpantalla.getText();
-            signo="+";
-            txtpantalla.setText("");
-        }
-    }//GEN-LAST:event_jButton16ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"2");
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        // TODO add your handling code here:
-        String cadena;
-        cadena=txtpantalla.getText();
-
-        if (cadena.length()>0) {
-            cadena=cadena.substring(0, cadena.length()-1);
-            txtpantalla.setText(cadena);
-        }
-    }//GEN-LAST:event_jButton18ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"8");
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-        String resultado;
-        memoria2=txtpantalla.getText();
-
-        if (!memoria2.equals("")) {
-            resultado=calculadora(memoria1,memoria2,signo);
-            txtpantalla.setText(resultado);
-        }
-
-    }//GEN-LAST:event_jButton19ActionPerformed
-public static String calculadora(String memoria1,String memoria2,String signo){
+    }public static String calculadora(String memoria1,String memoria2,String signo){
     Double resultado=0.0;
     String respuesta;
     
@@ -364,15 +314,56 @@ public static String calculadora(String memoria1,String memoria2,String signo){
     return respuesta;
 }
   
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void txtpantallaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtpantallaActionPerformed
         // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"5");
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_txtpantallaActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void txtpantallaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtpantallaKeyTyped
         // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"3");
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_txtpantallaKeyTyped
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"1");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here
+        if (!txtpantalla.getText().equals("")) {
+            memoria1=txtpantalla.getText();
+            signo="+";
+            txtpantalla.setText("");
+        }
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"6");
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"0");
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+        if (!txtpantalla.getText().equals("")) {
+            memoria1=txtpantalla.getText();
+            signo="*";
+            txtpantalla.setText("");
+        }
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"9");
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"7");
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
@@ -389,31 +380,58 @@ public static String calculadora(String memoria1,String memoria2,String signo){
 
             }
         }
-
     }//GEN-LAST:event_jButton10ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"9");
-    }//GEN-LAST:event_jButton11ActionPerformed
+        if (!txtpantalla.getText().equals("")) {
+            memoria1=txtpantalla.getText();
+            signo="/";
+            txtpantalla.setText("");
+        }
+    }//GEN-LAST:event_jButton14ActionPerformed
 
-    private void txtpantallaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtpantallaActionPerformed
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtpantallaActionPerformed
+        txtpantalla.setText(txtpantalla.getText()+"3");
+    }//GEN-LAST:event_jButton9ActionPerformed
 
-    private void txtpantallaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtpantallaKeyTyped
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtpantallaKeyTyped
+        txtpantalla.setText(txtpantalla.getText()+"4");
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"6");
-    }//GEN-LAST:event_jButton12ActionPerformed
+        txtpantalla.setText(txtpantalla.getText()+"5");
+    }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"1");
-    }//GEN-LAST:event_jButton1ActionPerformed
+        String resultado;
+        memoria2=txtpantalla.getText();
+
+        if (!memoria2.equals("")) {
+            resultado=calculadora(memoria1,memoria2,signo);
+            txtpantalla.setText(resultado);
+        }
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"8");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+        String cadena;
+        cadena=txtpantalla.getText();
+
+        if (cadena.length()>0) {
+            cadena=cadena.substring(0, cadena.length()-1);
+            txtpantalla.setText(cadena);
+        }
+    }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
@@ -422,8 +440,12 @@ public static String calculadora(String memoria1,String memoria2,String signo){
             signo="-";
             txtpantalla.setText("");
         }
-
     }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"2");
+    }//GEN-LAST:event_jButton5ActionPerformed
   public static boolean existepunto(String cadena){
         boolean resultado;
         resultado=false;
@@ -471,6 +493,7 @@ public static String calculadora(String memoria1,String memoria2,String signo){
         //</editor-fold>
 
         /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new calculadoraBasica().setVisible(true);
@@ -491,13 +514,16 @@ public static String calculadora(String memoria1,String memoria2,String signo){
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtpantalla;
     // End of variables declaration//GEN-END:variables
 }
