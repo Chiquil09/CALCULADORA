@@ -198,7 +198,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
- String Usuario = "profeNoe";
+ String Usuario = "Noe Solis";
         String Contraseña = "12345";
         String pass = new String (txt_password.getPassword());
         if(txt_Usuario.getText().equals(Usuario) && pass.equals(Contraseña)){
