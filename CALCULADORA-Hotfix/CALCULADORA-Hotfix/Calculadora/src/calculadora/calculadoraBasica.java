@@ -26,7 +26,6 @@ public class calculadoraBasica extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton15 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         txtpantalla = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
@@ -46,18 +45,14 @@ public class calculadoraBasica extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        MODO = new javax.swing.JComboBox<>();
 
         jButton15.setText("jButton15");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/modo2.png"))); // NOI18N
-
-        txtpantalla.setBackground(new java.awt.Color(51, 51, 51));
         txtpantalla.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
-        txtpantalla.setForeground(new java.awt.Color(254, 254, 254));
         txtpantalla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(13, 13, 13)));
         txtpantalla.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,14 +64,15 @@ public class calculadoraBasica extends javax.swing.JFrame {
                 txtpantallaKeyTyped(evt);
             }
         });
+        getContentPane().add(txtpantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 4, 1000, 150));
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.GridLayout(4, 5));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/7.png"))); // NOI18N
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton3.setText("7");
         jButton3.setBorder(null);
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -84,10 +80,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3);
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/8.png"))); // NOI18N
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton7.setText("8");
         jButton7.setBorder(null);
-        jButton7.setBorderPainted(false);
-        jButton7.setContentAreaFilled(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -95,10 +90,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton7);
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/9.png"))); // NOI18N
+        jButton11.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton11.setText("9");
         jButton11.setBorder(null);
-        jButton11.setBorderPainted(false);
-        jButton11.setContentAreaFilled(false);
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
@@ -106,10 +100,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton11);
 
-        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/suma.png"))); // NOI18N
+        jButton16.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton16.setText("+");
         jButton16.setBorder(null);
-        jButton16.setBorderPainted(false);
-        jButton16.setContentAreaFilled(false);
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton16ActionPerformed(evt);
@@ -128,10 +121,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton18);
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/4.png"))); // NOI18N
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton2.setText("4");
         jButton2.setBorder(null);
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -139,10 +131,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2);
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/5.png"))); // NOI18N
+        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton8.setText("5");
         jButton8.setBorder(null);
-        jButton8.setBorderPainted(false);
-        jButton8.setContentAreaFilled(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -150,10 +141,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton8);
 
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/6.png"))); // NOI18N
+        jButton12.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton12.setText("4");
         jButton12.setBorder(null);
-        jButton12.setBorderPainted(false);
-        jButton12.setContentAreaFilled(false);
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
@@ -161,10 +151,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton12);
 
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/resta.png"))); // NOI18N
+        jButton13.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton13.setText("-");
         jButton13.setBorder(null);
-        jButton13.setBorderPainted(false);
-        jButton13.setContentAreaFilled(false);
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
@@ -172,10 +161,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton13);
 
-        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/multiplicacion.png"))); // NOI18N
+        jButton17.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton17.setText("X");
         jButton17.setBorder(null);
-        jButton17.setBorderPainted(false);
-        jButton17.setContentAreaFilled(false);
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
@@ -183,10 +171,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton17);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/1.png"))); // NOI18N
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton1.setText("1");
         jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -194,10 +181,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1);
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/2.png"))); // NOI18N
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton5.setText("2");
         jButton5.setBorder(null);
-        jButton5.setBorderPainted(false);
-        jButton5.setContentAreaFilled(false);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -205,10 +191,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton5);
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/3.png"))); // NOI18N
+        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton9.setText("3");
         jButton9.setBorder(null);
-        jButton9.setBorderPainted(false);
-        jButton9.setContentAreaFilled(false);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -216,10 +201,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton9);
 
-        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/division.png"))); // NOI18N
+        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton14.setText("/");
         jButton14.setBorder(null);
-        jButton14.setBorderPainted(false);
-        jButton14.setContentAreaFilled(false);
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
@@ -227,10 +211,10 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton14);
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/punto.png"))); // NOI18N
+        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton10.setText(".");
         jButton10.setBorder(null);
         jButton10.setBorderPainted(false);
-        jButton10.setContentAreaFilled(false);
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
@@ -238,10 +222,10 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton10);
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/0.png"))); // NOI18N
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton4.setText("0");
+        jButton4.setToolTipText("");
         jButton4.setBorder(null);
-        jButton4.setBorderPainted(false);
-        jButton4.setContentAreaFilled(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -249,10 +233,9 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton4);
 
-        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/igual.png"))); // NOI18N
+        jButton19.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jButton19.setText("=");
         jButton19.setBorder(null);
-        jButton19.setBorderPainted(false);
-        jButton19.setContentAreaFilled(false);
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
@@ -260,44 +243,15 @@ public class calculadoraBasica extends javax.swing.JFrame {
         });
         jPanel1.add(jButton19);
 
-        jLabel2.setText("jLabel2");
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 1010, 470));
 
-        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("jLabel3");
-        jLabel3.setOpaque(true);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(txtpantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1010, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1010, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(860, 860, 860)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addComponent(txtpantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(115, 115, 115)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(100, 100, 100)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))))
-        );
+        MODO.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "BASICA ", "AVANZADA" }));
+        MODO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MODOActionPerformed(evt);
+            }
+        });
+        getContentPane().add(MODO, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 170, 110, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -338,48 +292,21 @@ public class calculadoraBasica extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtpantallaKeyTyped
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"1");
-    }//GEN-LAST:event_jButton1ActionPerformed
+        String resultado;
+        memoria2=txtpantalla.getText();
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here
-        if (!txtpantalla.getText().equals("")) {
-            memoria1=txtpantalla.getText();
-            signo="+";
-            txtpantalla.setText("");
+        if (!memoria2.equals("")) {
+            resultado=calculadora(memoria1,memoria2,signo);
+            txtpantalla.setText(resultado);
         }
-    }//GEN-LAST:event_jButton16ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"6");
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         txtpantalla.setText(txtpantalla.getText()+"0");
     }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-        if (!txtpantalla.getText().equals("")) {
-            memoria1=txtpantalla.getText();
-            signo="*";
-            txtpantalla.setText("");
-        }
-    }//GEN-LAST:event_jButton17ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"9");
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"7");
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
@@ -412,31 +339,48 @@ public class calculadoraBasica extends javax.swing.JFrame {
         txtpantalla.setText(txtpantalla.getText()+"3");
     }//GEN-LAST:event_jButton9ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"4");
-    }//GEN-LAST:event_jButton2ActionPerformed
+        txtpantalla.setText(txtpantalla.getText()+"2");
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"1");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+        if (!txtpantalla.getText().equals("")) {
+            memoria1=txtpantalla.getText();
+            signo="*";
+            txtpantalla.setText("");
+        }
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+        if (!txtpantalla.getText().equals("")) {
+            memoria1=txtpantalla.getText();
+            signo="-";
+            txtpantalla.setText("");
+        }
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"6");
+    }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
         txtpantalla.setText(txtpantalla.getText()+"5");
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String resultado;
-        memoria2=txtpantalla.getText();
-
-        if (!memoria2.equals("")) {
-            resultado=calculadora(memoria1,memoria2,signo);
-            txtpantalla.setText(resultado);
-        }
-    }//GEN-LAST:event_jButton19ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"8");
-    }//GEN-LAST:event_jButton7ActionPerformed
+        txtpantalla.setText(txtpantalla.getText()+"4");
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
@@ -449,19 +393,39 @@ public class calculadoraBasica extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton18ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here
         if (!txtpantalla.getText().equals("")) {
             memoria1=txtpantalla.getText();
-            signo="-";
+            signo="+";
             txtpantalla.setText("");
         }
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_jButton16ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
-        txtpantalla.setText(txtpantalla.getText()+"2");
-    }//GEN-LAST:event_jButton5ActionPerformed
+        txtpantalla.setText(txtpantalla.getText()+"9");
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"8");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        txtpantalla.setText(txtpantalla.getText()+"7");
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void MODOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MODOActionPerformed
+        String calculadora =(String)MODO.getSelectedItem();
+        if(calculadora.equals("AVANZADA"))  {
+            this.dispose();
+            calcuAvanzada ver= new calcuAvanzada();
+            ver.setVisible(true);
+        }
+
+    }//GEN-LAST:event_MODOActionPerformed
   public static boolean existepunto(String cadena){
         boolean resultado;
         resultado=false;
@@ -518,6 +482,7 @@ public class calculadoraBasica extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> MODO;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -536,9 +501,6 @@ public class calculadoraBasica extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtpantalla;
     // End of variables declaration//GEN-END:variables
