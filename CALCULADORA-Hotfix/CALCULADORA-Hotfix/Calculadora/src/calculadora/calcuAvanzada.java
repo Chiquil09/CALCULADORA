@@ -126,7 +126,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_coseno.setBackground(new java.awt.Color(45, 54, 64));
         btn_coseno.setForeground(new java.awt.Color(254, 254, 254));
         btn_coseno.setText("COS");
-        btn_coseno.setOpaque(true);
         btn_coseno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_cosenoActionPerformed(evt);
@@ -137,7 +136,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_cosInverso.setBackground(new java.awt.Color(45, 54, 64));
         btn_cosInverso.setForeground(new java.awt.Color(254, 254, 254));
         btn_cosInverso.setText("cos-1");
-        btn_cosInverso.setOpaque(true);
         btn_cosInverso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_cosInversoActionPerformed(evt);
@@ -148,7 +146,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_PI.setBackground(new java.awt.Color(45, 54, 64));
         btn_PI.setForeground(new java.awt.Color(254, 254, 254));
         btn_PI.setText("pi(n)");
-        btn_PI.setOpaque(true);
         btn_PI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_PIActionPerformed(evt);
@@ -159,7 +156,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_E.setBackground(new java.awt.Color(45, 54, 64));
         btn_E.setForeground(new java.awt.Color(254, 254, 254));
         btn_E.setText("e");
-        btn_E.setOpaque(true);
         btn_E.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_EActionPerformed(evt);
@@ -170,7 +166,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_factorial.setBackground(new java.awt.Color(45, 54, 64));
         btn_factorial.setForeground(new java.awt.Color(254, 254, 254));
         btn_factorial.setText(" π!");
-        btn_factorial.setOpaque(true);
         btn_factorial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_factorialActionPerformed(evt);
@@ -181,7 +176,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_Pote10.setBackground(new java.awt.Color(45, 54, 64));
         btn_Pote10.setForeground(new java.awt.Color(254, 254, 254));
         btn_Pote10.setText("10^x");
-        btn_Pote10.setOpaque(true);
         btn_Pote10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_Pote10ActionPerformed(evt);
@@ -192,7 +186,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_seno.setBackground(new java.awt.Color(45, 54, 64));
         btn_seno.setForeground(new java.awt.Color(254, 254, 254));
         btn_seno.setText("SIN");
-        btn_seno.setOpaque(true);
         btn_seno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_senoActionPerformed(evt);
@@ -203,7 +196,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_sinInverso.setBackground(new java.awt.Color(45, 54, 64));
         btn_sinInverso.setForeground(new java.awt.Color(254, 254, 254));
         btn_sinInverso.setText("sin-1");
-        btn_sinInverso.setOpaque(true);
         btn_sinInverso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_sinInversoActionPerformed(evt);
@@ -214,7 +206,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_elevaMenos1.setBackground(new java.awt.Color(45, 54, 64));
         btn_elevaMenos1.setForeground(new java.awt.Color(254, 254, 254));
         btn_elevaMenos1.setText("x^-1");
-        btn_elevaMenos1.setOpaque(true);
         btn_elevaMenos1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_elevaMenos1ActionPerformed(evt);
@@ -225,7 +216,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_raizX.setBackground(new java.awt.Color(45, 54, 64));
         btn_raizX.setForeground(new java.awt.Color(254, 254, 254));
         btn_raizX.setText("y√x");
-        btn_raizX.setOpaque(true);
         btn_raizX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_raizXActionPerformed(evt);
@@ -236,7 +226,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_raizCubica.setBackground(new java.awt.Color(45, 54, 64));
         btn_raizCubica.setForeground(new java.awt.Color(254, 254, 254));
         btn_raizCubica.setText("3√x");
-        btn_raizCubica.setOpaque(true);
         btn_raizCubica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_raizCubicaActionPerformed(evt);
@@ -247,7 +236,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_exponenciacion.setBackground(new java.awt.Color(45, 54, 64));
         btn_exponenciacion.setForeground(new java.awt.Color(254, 254, 254));
         btn_exponenciacion.setText("EXP");
-        btn_exponenciacion.setOpaque(true);
         btn_exponenciacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_exponenciacionActionPerformed(evt);
@@ -258,7 +246,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_tangente.setBackground(new java.awt.Color(45, 54, 64));
         btn_tangente.setForeground(new java.awt.Color(254, 254, 254));
         btn_tangente.setText("TAN");
-        btn_tangente.setOpaque(true);
         btn_tangente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tangenteActionPerformed(evt);
@@ -269,7 +256,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_tanInverso.setBackground(new java.awt.Color(45, 54, 64));
         btn_tanInverso.setForeground(new java.awt.Color(254, 254, 254));
         btn_tanInverso.setText("tan-1");
-        btn_tanInverso.setOpaque(true);
         btn_tanInverso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tanInversoActionPerformed(evt);
@@ -280,7 +266,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_potenciar.setBackground(new java.awt.Color(45, 54, 64));
         btn_potenciar.setForeground(new java.awt.Color(254, 254, 254));
         btn_potenciar.setText("x^y");
-        btn_potenciar.setOpaque(true);
         btn_potenciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_potenciarActionPerformed(evt);
@@ -291,7 +276,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_cubo.setBackground(new java.awt.Color(45, 54, 64));
         btn_cubo.setForeground(new java.awt.Color(254, 254, 254));
         btn_cubo.setText("x^3");
-        btn_cubo.setOpaque(true);
         btn_cubo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_cuboActionPerformed(evt);
@@ -302,7 +286,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_cuadrado.setBackground(new java.awt.Color(45, 54, 64));
         btn_cuadrado.setForeground(new java.awt.Color(254, 254, 254));
         btn_cuadrado.setText("x^2");
-        btn_cuadrado.setOpaque(true);
         btn_cuadrado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_cuadradoActionPerformed(evt);
@@ -313,7 +296,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_Logaritmo.setBackground(new java.awt.Color(45, 54, 64));
         btn_Logaritmo.setForeground(new java.awt.Color(254, 254, 254));
         btn_Logaritmo.setText("LOG");
-        btn_Logaritmo.setOpaque(true);
         btn_Logaritmo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_LogaritmoActionPerformed(evt);
@@ -324,7 +306,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_Mc.setBackground(new java.awt.Color(45, 54, 64));
         btn_Mc.setForeground(new java.awt.Color(254, 254, 254));
         btn_Mc.setText("MC");
-        btn_Mc.setOpaque(true);
         btn_Mc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_McActionPerformed(evt);
@@ -335,7 +316,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_retroceder.setBackground(new java.awt.Color(45, 54, 64));
         btn_retroceder.setForeground(new java.awt.Color(254, 254, 254));
         btn_retroceder.setText("<--");
-        btn_retroceder.setOpaque(true);
         btn_retroceder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_retrocederActionPerformed(evt);
@@ -346,7 +326,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_7.setBackground(new java.awt.Color(45, 54, 64));
         btn_7.setForeground(new java.awt.Color(254, 254, 254));
         btn_7.setText("7");
-        btn_7.setOpaque(true);
         btn_7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_7ActionPerformed(evt);
@@ -357,7 +336,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_4.setBackground(new java.awt.Color(45, 54, 64));
         btn_4.setForeground(new java.awt.Color(254, 254, 254));
         btn_4.setText("4");
-        btn_4.setOpaque(true);
         btn_4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_4ActionPerformed(evt);
@@ -368,7 +346,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_1.setBackground(new java.awt.Color(45, 54, 64));
         btn_1.setForeground(new java.awt.Color(254, 254, 254));
         btn_1.setText("1");
-        btn_1.setOpaque(true);
         btn_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_1ActionPerformed(evt);
@@ -379,7 +356,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_0.setBackground(new java.awt.Color(45, 54, 64));
         btn_0.setForeground(new java.awt.Color(254, 254, 254));
         btn_0.setText("0");
-        btn_0.setOpaque(true);
         btn_0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_0ActionPerformed(evt);
@@ -390,7 +366,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_2.setBackground(new java.awt.Color(45, 54, 64));
         btn_2.setForeground(new java.awt.Color(254, 254, 254));
         btn_2.setText("2");
-        btn_2.setOpaque(true);
         btn_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_2ActionPerformed(evt);
@@ -401,7 +376,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_5.setBackground(new java.awt.Color(45, 54, 64));
         btn_5.setForeground(new java.awt.Color(254, 254, 254));
         btn_5.setText("5");
-        btn_5.setOpaque(true);
         btn_5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_5ActionPerformed(evt);
@@ -412,7 +386,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_8.setBackground(new java.awt.Color(45, 54, 64));
         btn_8.setForeground(new java.awt.Color(254, 254, 254));
         btn_8.setText("8");
-        btn_8.setOpaque(true);
         btn_8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_8ActionPerformed(evt);
@@ -423,7 +396,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_CE.setBackground(new java.awt.Color(45, 54, 64));
         btn_CE.setForeground(new java.awt.Color(255, 51, 0));
         btn_CE.setText("CE");
-        btn_CE.setOpaque(true);
         btn_CE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_CEActionPerformed(evt);
@@ -434,7 +406,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_Mr.setBackground(new java.awt.Color(45, 54, 64));
         btn_Mr.setForeground(new java.awt.Color(254, 254, 254));
         btn_Mr.setText("MR");
-        btn_Mr.setOpaque(true);
         btn_Mr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_MrActionPerformed(evt);
@@ -445,7 +416,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_Ms.setBackground(new java.awt.Color(45, 54, 64));
         btn_Ms.setForeground(new java.awt.Color(254, 254, 254));
         btn_Ms.setText("MS");
-        btn_Ms.setOpaque(true);
         btn_Ms.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_MsActionPerformed(evt);
@@ -456,7 +426,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_C.setBackground(new java.awt.Color(45, 54, 64));
         btn_C.setForeground(new java.awt.Color(204, 0, 0));
         btn_C.setText("C");
-        btn_C.setOpaque(true);
         btn_C.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_CActionPerformed(evt);
@@ -467,7 +436,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_9.setBackground(new java.awt.Color(45, 54, 64));
         btn_9.setForeground(new java.awt.Color(254, 254, 254));
         btn_9.setText("9");
-        btn_9.setOpaque(true);
         btn_9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_9ActionPerformed(evt);
@@ -478,7 +446,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_6.setBackground(new java.awt.Color(45, 54, 64));
         btn_6.setForeground(new java.awt.Color(254, 254, 254));
         btn_6.setText("6");
-        btn_6.setOpaque(true);
         btn_6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_6ActionPerformed(evt);
@@ -489,7 +456,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_3.setBackground(new java.awt.Color(45, 54, 64));
         btn_3.setForeground(new java.awt.Color(254, 254, 254));
         btn_3.setText("3");
-        btn_3.setOpaque(true);
         btn_3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_3ActionPerformed(evt);
@@ -500,7 +466,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_punto.setBackground(new java.awt.Color(45, 54, 64));
         btn_punto.setForeground(new java.awt.Color(254, 254, 254));
         btn_punto.setText(".");
-        btn_punto.setOpaque(true);
         btn_punto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_puntoActionPerformed(evt);
@@ -511,7 +476,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_suma.setBackground(new java.awt.Color(45, 54, 64));
         btn_suma.setForeground(new java.awt.Color(254, 254, 254));
         btn_suma.setText("+");
-        btn_suma.setOpaque(true);
         btn_suma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_sumaActionPerformed(evt);
@@ -522,7 +486,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_resta.setBackground(new java.awt.Color(45, 54, 64));
         btn_resta.setForeground(new java.awt.Color(254, 254, 254));
         btn_resta.setText("-");
-        btn_resta.setOpaque(true);
         btn_resta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_restaActionPerformed(evt);
@@ -533,7 +496,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_multiplicar.setBackground(new java.awt.Color(45, 54, 64));
         btn_multiplicar.setForeground(new java.awt.Color(254, 254, 254));
         btn_multiplicar.setText("*");
-        btn_multiplicar.setOpaque(true);
         btn_multiplicar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_multiplicarActionPerformed(evt);
@@ -544,7 +506,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_dividir.setBackground(new java.awt.Color(45, 54, 64));
         btn_dividir.setForeground(new java.awt.Color(254, 254, 254));
         btn_dividir.setText("/");
-        btn_dividir.setOpaque(true);
         btn_dividir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_dividirActionPerformed(evt);
@@ -555,7 +516,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_raiz.setBackground(new java.awt.Color(45, 54, 64));
         btn_raiz.setForeground(new java.awt.Color(254, 254, 254));
         btn_raiz.setText("√");
-        btn_raiz.setOpaque(true);
         btn_raiz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_raizActionPerformed(evt);
@@ -566,7 +526,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_masMas.setBackground(new java.awt.Color(45, 54, 64));
         btn_masMas.setForeground(new java.awt.Color(254, 254, 254));
         btn_masMas.setText("M+");
-        btn_masMas.setOpaque(true);
         btn_masMas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_masMasActionPerformed(evt);
@@ -578,7 +537,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_igual.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_igual.setForeground(new java.awt.Color(254, 254, 254));
         btn_igual.setText("=");
-        btn_igual.setOpaque(true);
         btn_igual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_igualActionPerformed(evt);
@@ -589,7 +547,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_opInversa.setBackground(new java.awt.Color(45, 54, 64));
         btn_opInversa.setForeground(new java.awt.Color(254, 254, 254));
         btn_opInversa.setText("1/x");
-        btn_opInversa.setOpaque(true);
         btn_opInversa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_opInversaActionPerformed(evt);
@@ -599,7 +556,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
 
         btn_porcentaje.setBackground(new java.awt.Color(45, 54, 64));
         btn_porcentaje.setText("%");
-        btn_porcentaje.setOpaque(true);
         btn_porcentaje.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_porcentajeActionPerformed(evt);
@@ -610,7 +566,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_cambioDeSigno.setBackground(new java.awt.Color(45, 54, 64));
         btn_cambioDeSigno.setForeground(new java.awt.Color(254, 254, 254));
         btn_cambioDeSigno.setText("±");
-        btn_cambioDeSigno.setOpaque(true);
         btn_cambioDeSigno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_cambioDeSignoActionPerformed(evt);
@@ -621,7 +576,6 @@ public class calcuAvanzada extends javax.swing.JFrame {
         btn_menosMa.setBackground(new java.awt.Color(45, 54, 64));
         btn_menosMa.setForeground(new java.awt.Color(254, 254, 254));
         btn_menosMa.setText("M-");
-        btn_menosMa.setOpaque(true);
         btn_menosMa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_menosMaActionPerformed(evt);
@@ -644,7 +598,7 @@ public class calcuAvanzada extends javax.swing.JFrame {
 
         MODO.setBackground(new java.awt.Color(45, 54, 64));
         MODO.setForeground(new java.awt.Color(254, 254, 254));
-        MODO.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AVANZADA", "BASICA ", " ", " " }));
+        MODO.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AVANZADA", "BASICA" }));
         MODO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MODOActionPerformed(evt);
@@ -1275,7 +1229,7 @@ public class calcuAvanzada extends javax.swing.JFrame {
 
     private void MODOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MODOActionPerformed
         String calculadora =(String)MODO.getSelectedItem();
-        if(calculadora.equals("AVANZADA"))  {
+        if(MODO.getSelectedItem().equals("BASICA"))  {
             this.dispose();
             calculadoraBasica ver= new calculadoraBasica();
             ver.setVisible(true);
